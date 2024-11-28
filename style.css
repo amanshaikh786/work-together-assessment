@@ -1,0 +1,357 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+section {
+    padding: 100px 0;
+    min-height: 100vh;
+}
+#home {
+    background-color: #f0f8ff;
+}
+#about {
+    background-color: #f8f8f8;
+}
+#services {
+    background-color: #e0f7fa;
+}
+#contact {
+    background-color: #f1f8e9;
+}
+/*       Navbar CSS                                                                              */
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+/* Logo styling */
+.logo h1 {
+    font-size: 24px;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f0a500;
+}
+
+/* Mobile menu toggle */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/*                  Home Section                                           */
+.home {
+    background: url('images/bg.png') no-repeat center center/cover;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.home h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-top: 18%;
+}
+
+.home p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+/*                       About Us                                               */
+.about {
+    background-color: white;
+    padding: 2rem 0;
+  }
+  
+  .about h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .company-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .info-item {
+    background-color: #ecf0f1;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .info-item p, .info-item ul {
+    font-size: 1rem;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+
+  .info-item:hover{
+    cursor: pointer;
+    box-shadow: #555;
+  }
+
+/*                            Services Section                                        */
+#services{
+    background-color: #ebebeb;;
+}
+
+.services-section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .services-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .service-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .service-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .service-card p {
+    font-size: 16px;
+    color: #555;
+  }
+
+  .service-card:hover{
+    cursor: pointer;
+    box-shadow: #333;
+  }
+
+
+
+/*                                  Contact Form Section                                          */
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+    padding: 50px 10px;
+}
+
+.contact-form {
+    background-color: rgb(193, 193, 193);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.contact-form label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+    color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    background-color: #333;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #ff7f50;
+}
+
+/* Mobile-first navigation menu */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+.container {
+    padding: 0 15px; /* Ensures proper spacing on smaller screens */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/*                                           Media Queries for Responsiveness                                                 */
+
+/*              For tablet and mobile devices                                      */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    /* Show menu when active */
+    nav.active ul {
+        display: flex;
+    }
+}
+
+/* Toggle the navigation on and off */
+@media (max-width: 768px) {
+    .menu-icon.open {
+        background-color: #f0a500;
+        padding: 10px;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin-bottom: 10px;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .company-info {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .info-item {
+      width: 80%;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .service-cards {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .service-cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .service-cards {
+      grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+.home h2 {
+    font-size: 24px;
+}
+
+.home p {
+    font-size: 14px;
+}
+}
